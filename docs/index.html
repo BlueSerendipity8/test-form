@@ -1,8 +1,16 @@
-<!DOCTYPE html><html lang="fr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Formulaire de Calcul</title></head><body><h1>Formulaire de Calcul</h1><form id="calcForm"><label for="number1">Nombre 1:</label><input type="number" id="number1" name="number1" required><br><br><label for="number2">Nombre 2:</label><input type="number" id="number2" name="number2" required><br><br><button type="button" onclick="calculate()">Calculer</button></form><h2>Résultat: <span id="result"></span></h2><script>
-        function calculate() {
-            var num1 = parseFloat(document.getElementById('number1').value);
-            var num2 = parseFloat(document.getElementById('number2').value);
-            var result = num1 + num2; // Exemple de calcul, ici une addition
-            document.getElementById('result').innerText = result;
-        }
-    </script></body></html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My First Survey</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://unpkg.com/survey-core/defaultV2.min.css" type="text/css" rel="stylesheet">
+    
+    <script type="text/javascript" src="https://unpkg.com/survey-core/survey.core.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/survey-js-ui/survey-js-ui.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+</head>
+<body>
+    <div id="surveyContainer"></div>
+</body>
+</html>
